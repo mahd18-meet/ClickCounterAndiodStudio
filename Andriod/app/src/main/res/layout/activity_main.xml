@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahd.andriod.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="385dp"
+        android:layout_height="535dp"
+        tools:layout_editor_absoluteY="-8dp"
+        android:layout_marginRight="-5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:ignore="MissingConstraints,RtlHardcoded">
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="150dp"
+            android:layout_height="88dp"
+            android:text="@string/_0"
+            android:textSize="82sp"
+
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="117dp"
+            android:layout_marginTop="82dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/buttonClick" />
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="231dp"
+            android:layout_below="@+id/textViewCount"
+            android:layout_alignStart="@+id/buttonReset"
+            android:layout_marginTop="46dp" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="359dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="145dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
